@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment Form</title>
+
+    <!-- JSONPowerDB Library -->
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="resetForm()">
+
+<h2>Student Enrollment Form</h2>
+
+<form id="studentForm">
+
+    Roll No:
+    <input type="text" id="rollNo" onchange="checkRollNo()" autofocus><br><br>
+
+    Full Name:
+    <input type="text" id="fullName" disabled><br><br>
+
+    Class:
+    <input type="text" id="studentClass" disabled><br><br>
+
+    Birth Date:
+    <input type="date" id="birthDate" disabled><br><br>
+
+    Address:
+    <input type="text" id="address" disabled><br><br>
+
+    Enrollment Date:
+    <input type="date" id="enrollDate" disabled><br><br>
+
+    <button type="button" id="saveBtn" onclick="saveData()" disabled>Save</button>
+    <button type="button" id="updateBtn" onclick="updateData()" disabled>Update</button>
+    <button type="button" id="resetBtn" onclick="resetForm()" disabled>Reset</button>
+
+</form>
+
+</body>
+</html>
